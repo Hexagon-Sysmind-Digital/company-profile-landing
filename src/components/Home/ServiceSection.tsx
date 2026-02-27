@@ -20,7 +20,7 @@ const reveal: Variants = {
   },
 };
 
-export default function ServicesSection() {
+export default function ServiceSection() {
   return (
     <section
       id="services"

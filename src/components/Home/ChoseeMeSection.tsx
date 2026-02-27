@@ -13,7 +13,7 @@ const reveal: Variants = {
   }
 };
 
-export default function AboutSection() {
+export default function ChoseeMeSection() {
   return (
     <section
       id="about"
@@ -42,10 +42,10 @@ export default function AboutSection() {
           </p>
 
           <h2 className="relative inline-block whitespace-nowrap font-extrabold leading-[0.95] 
-               text-[72px] md:text-[96px] lg:text-[85px] text-black">
+               text-[72px] md:text-[96px] lg:text-[70px] text-black">
 
-  <span
-    className="
+            <span
+              className="
       absolute
       left-[-100vw]
       top-[60%]
@@ -55,10 +55,10 @@ export default function AboutSection() {
       bg-lime-400
       -z-10
     "
-  />
+            />
 
-  Why Hexamind
-</h2>
+            Why Hexamind ?
+          </h2>
 
           <p className="mt-5 text-black/80 text-lg leading-relaxed">
             We build modern digital products designed for performance,
@@ -66,12 +66,29 @@ export default function AboutSection() {
           </p>
 
           {/* COMPACT FEATURE LIST */}
+          {/* COMPACT FEATURE LIST */}
           <div className="mt-8 space-y-3">
 
-            <div className="relative">
-              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl"></div>
+            {/* ITEM 1 */}
+            <div className="relative group cursor-default">
+              <div className="
+      absolute inset-0
+      translate-x-2 translate-y-2
+      bg-black rounded-xl
+      transition-all duration-300
+      group-hover:translate-x-3
+      group-hover:translate-y-3
+    " />
 
-              <div className="relative bg-white border-2 border-black rounded-xl px-5 py-4 flex items-center gap-3">
+              <div className="
+      relative bg-white
+      border-2 border-black
+      group-hover:border-lime-400
+      rounded-xl px-5 py-4
+      flex items-center gap-3
+      transition-all duration-300
+      group-hover:-translate-y-1
+    ">
                 <div className="w-8 h-8 rounded-full bg-lime-400 flex items-center justify-center font-bold text-black text-sm">
                   ✓
                 </div>
@@ -82,10 +99,11 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl"></div>
+            {/* ITEM 2 */}
+            <div className="relative group cursor-default">
+              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl transition-all duration-300 group-hover:translate-x-3 group-hover:translate-y-3" />
 
-              <div className="relative bg-white border-2 border-black rounded-xl px-5 py-4 flex items-center gap-3">
+              <div className="relative bg-white border-2 border-black group-hover:border-lime-400 rounded-xl px-5 py-4 flex items-center gap-3 transition-all duration-300 group-hover:-translate-y-1">
                 <div className="w-8 h-8 rounded-full bg-purple-400/30 flex items-center justify-center text-purple-600 font-bold text-sm">
                   ✓
                 </div>
@@ -96,10 +114,11 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl"></div>
+            {/* ITEM 3 */}
+            <div className="relative group cursor-default">
+              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl transition-all duration-300 group-hover:translate-x-3 group-hover:translate-y-3" />
 
-              <div className="relative bg-white border-2 border-black rounded-xl px-5 py-4 flex items-center gap-3">
+              <div className="relative bg-white border-2 border-black group-hover:border-lime-400 rounded-xl px-5 py-4 flex items-center gap-3 transition-all duration-300 group-hover:-translate-y-1">
                 <div className="w-8 h-8 rounded-full bg-blue-400/30 flex items-center justify-center text-blue-600 font-bold text-sm">
                   ✓
                 </div>
@@ -110,10 +129,11 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl"></div>
+            {/* ITEM 4 */}
+            <div className="relative group cursor-default">
+              <div className="absolute inset-0 translate-x-2 translate-y-2 bg-black rounded-xl transition-all duration-300 group-hover:translate-x-3 group-hover:translate-y-3" />
 
-              <div className="relative bg-white border-2 border-black rounded-xl px-5 py-4 flex items-center gap-3">
+              <div className="relative bg-white border-2 border-black group-hover:border-lime-400 rounded-xl px-5 py-4 flex items-center gap-3 transition-all duration-300 group-hover:-translate-y-1">
                 <div className="w-8 h-8 rounded-full bg-orange-400/30 flex items-center justify-center text-orange-600 font-bold text-sm">
                   ✓
                 </div>
