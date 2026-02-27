@@ -41,7 +41,7 @@ export default function Navbar() {
 
         {/* Menu */}
 <div
-  className={`hidden md:flex gap-8 text-sm font-medium transition-colors duration-500
+  className={`hidden md:flex gap-10 text-md font-bold transition-colors duration-500
   ${scrolled ? "text-black" : "text-white"}`}
 >
   {[
