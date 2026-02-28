@@ -69,7 +69,7 @@ export default function OurTeamSection() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: false, amount: 0.2 }}
-                    className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto items-stretch"
+                    className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto items-start"
                 >
                     {teamData.map((member, index) => (
                         <TeamCard key={index} {...member} />
@@ -118,7 +118,7 @@ function TeamCard({
     desc: string;
 }) {
     return (
-        <motion.div variants={reveal} className="relative group h-full">
+        <motion.div variants={reveal} className="relative group">
 
             {/* shadow offset */}
             <div
@@ -142,7 +142,7 @@ function TeamCard({
                 group-hover:-translate-y-1
                 group-hover:border-lime-400
                 flex items-center gap-5
-                p-5 h-full
+                p-5
             "
             >
 
@@ -165,17 +165,17 @@ function TeamCard({
                 {/* CONTENT */}
                 <div className="flex flex-col text-left flex-grow">
 
-    <h3 className="text-lg font-bold text-black leading-snug">
-        {name}
-    </h3>
+                    <h3 className="text-lg font-bold text-black leading-snug">
+                        {name}
+                    </h3>
 
-    <p className="text-lime-600 font-semibold text-sm">
-        {role}
-    </p>
+                    <p className="text-lime-600 font-semibold text-sm">
+                        {role}
+                    </p>
 
-    {/* DESC HOVER */}
-    <div
-        className="
+                    {/* DESC HOVER */}
+                    <div
+                        className="
         overflow-hidden
         max-h-0
         opacity-0
@@ -183,13 +183,13 @@ function TeamCard({
         group-hover:max-h-[200px]
         group-hover:opacity-100
     "
-    >
-        <p className="text-black/70 text-sm mt-3 leading-relaxed">
-            {desc}
-        </p>
-    </div>
+                    >
+                        <p className="text-black/70 text-sm mt-3 leading-relaxed">
+                            {desc}
+                        </p>
+                    </div>
 
-</div>
+                </div>
 
             </div>
         </motion.div>
