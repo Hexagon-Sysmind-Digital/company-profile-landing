@@ -69,7 +69,7 @@ export default function PricingSection() {
 
                     <h2 className="relative inline-block font-extrabold text-[48px] md:text-[60px] text-black px-3 py-1">
                         <span className="absolute left-0 top-1/2 -translate-y-1/2 h-[70%] w-full bg-lime-400 -z-10" />
-                        Pricing & Packages
+                        Product
                     </h2>
                 </motion.div>
 

@@ -1,7 +1,7 @@
 "use client";
 
-import HeroSection from "../../components/Pricing/HeroSection";
-import PricingSection from "../../components/Pricing/PricingSection";
+import HeroSection from "../../components/Product/HeroSection";
+import PricingSection from "../../components/Product/PricingSection";
 import CTASection from "../../components/Home/CTASection";
 import FooterSection from "../../components/Home/FooterSection";
 

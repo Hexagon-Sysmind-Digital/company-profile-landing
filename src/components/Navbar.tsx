@@ -22,66 +22,71 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
       className={`fixed w-full z-50 backdrop-blur-xl transition-all duration-500
-      ${
-        scrolled
-          ? "bg-white/70 shadow-sm"
-          : "bg-black/60"
-      }`}
+      ${scrolled ? "bg-white/70 shadow-sm" : "bg-black/60"}`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center relative">
 
-        {/* Logo */}
+        {/* ================= LOGO ================= */}
         <Link
           href="/"
-          className={`text-lg font-semibold tracking-wider transition-colors duration-500
-          ${scrolled ? "text-black" : "text-white"}`}
+          className="text-2xl font-extrabold tracking-wider"
         >
-          HEXAMIND
+          <span className="text-lime-400">HEXA</span>
+          <span className={scrolled ? "text-black" : "text-white"}>
+            MIND
+          </span>
         </Link>
 
-        {/* Menu */}
-<div
-  className={`hidden md:flex gap-10 text-md font-bold transition-colors duration-500
-  ${scrolled ? "text-black" : "text-white"}`}
->
-  {[
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Projects", link: "/project" },
-    { name: "Pricing", link: "/pricing" },
-    { name: "FAQ", link: "/faq" },
-  ].map((item, i) => (
-    <Link
-      key={i}
-      href={item.link}
-      className="relative px-3 py-1 rounded-md overflow-hidden group transition-colors duration-300"
-    >
-      {/* Hover Background */}
-      <span
-        className={`absolute inset-0 scale-x-0 origin-left
-        transition-transform duration-300
-        group-hover:scale-x-100
-        ${
-          scrolled
-            ? "bg-black"     // scroll → hitam pekat
-            : "bg-lime-400"  // atas → stabilo
-        }`}
-      />
+        {/* ================= CENTER MENU ================= */}
+        <div
+          className={`absolute left-1/2 -translate-x-1/2 hidden md:flex gap-10 text-md font-bold transition-colors duration-500
+          ${scrolled ? "text-black" : "text-white"}`}
+        >
+          {[
+            { name: "Home", link: "/" },
+            { name: "About", link: "/about" },
+            { name: "Projects", link: "/project" },
+            { name: "Product", link: "/product" },
+          ].map((item, i) => (
+            <Link
+              key={i}
+              href={item.link}
+              className="relative px-3 py-1 rounded-md overflow-hidden group"
+            >
+              <span
+                className={`absolute inset-0 scale-x-0 origin-left
+                transition-transform duration-300
+                group-hover:scale-x-100
+                ${scrolled ? "bg-black" : "bg-lime-400"}`}
+              />
 
-      {/* Text */}
-      <span
-        className={`relative z-10 transition-colors duration-300
-        ${
-          scrolled
-            ? "group-hover:text-white"
-            : "group-hover:text-black"
-        }`}
-      >
-        {item.name}
-      </span>
-    </Link>
-  ))}
-</div>
+              <span
+                className={`relative z-10 transition-colors duration-300
+                ${scrolled
+                  ? "group-hover:text-white"
+                  : "group-hover:text-black"}`}
+              >
+                {item.name}
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        {/* ================= FAQ RIGHT ================= */}
+        <div className="ml-auto hidden md:block">
+          <Link
+            href="/faq"
+            className="relative px-5 py-2 rounded-lg overflow-hidden group font-bold"
+          >
+            {/* Hover BG */}
+            <span className="rounded-lg absolute inset-0 bg-lime-400 transition-all duration-300 group-hover:bg-black" />
+
+            {/* Text */}
+            <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
+              FAQ
+            </span>
+          </Link>
+        </div>
 
       </div>
     </motion.nav>

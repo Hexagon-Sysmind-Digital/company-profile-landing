@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import TechMarquee from "../TechMarquee";
+import Link from "next/link";
 
 function AnimatedWords({
   text,
@@ -56,6 +57,7 @@ const slides = [
     subtitle:
       "Transforming your ideas into high-performance digital products designed for growth and long-term success.",
     button: "Start a Project",
+    link: "/product",
   },
   {
     image: "/images/slider2.jpg",
@@ -63,6 +65,7 @@ const slides = [
     subtitle:
       "From responsive websites to powerful applications, we craft digital solutions tailored to your business goals.",
     button: "View Our Work",
+    link: "/project",
   },
   {
     image: "/images/slider3.jpg",
@@ -70,6 +73,7 @@ const slides = [
     subtitle:
       "We combine clean code, strategic thinking, and modern design to build products that perform and scale.",
     button: "Get a Free Consultation",
+    link: "#cta",
   },
 ];
 
@@ -144,15 +148,47 @@ export default function HeroSection() {
                   {slides[index].subtitle}
                 </motion.p>
 
-                <motion.button
-                  key={slides[index].button}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9 }}
-                  className="mt-8 px-6 py-3 bg-lime-400 hover:bg-lime-500 text-black transition rounded-lg font-semibold"
-                >
-                  {slides[index].button}
-                </motion.button>
+                {slides[index].link.startsWith("#") ? (
+  <motion.button
+  key={slides[index].button}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.9 }}
+  onClick={() => {
+    const el = document.querySelector(slides[index].link);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="group relative mt-8 inline-flex px-6 py-3 rounded-lg font-semibold overflow-hidden"
+>
+  {/* Hover Background */}
+  <span className="absolute inset-0 bg-lime-400 transition-all duration-300 group-hover:bg-black" />
+
+  {/* Text */}
+  <span className="relative z-10 text-black transition-colors duration-300 group-hover:text-white">
+    {slides[index].button}
+  </span>
+</motion.button>
+) : (
+  <motion.div
+  key={slides[index].button}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.9 }}
+>
+  <Link
+    href={slides[index].link}
+    className="group relative mt-8 inline-flex px-6 py-3 rounded-lg font-semibold overflow-hidden"
+  >
+    {/* Hover BG */}
+    <span className="absolute inset-0 bg-lime-400 transition-all duration-300 group-hover:bg-black" />
+
+    {/* Text */}
+    <span className="relative z-10 text-black transition-colors duration-300 group-hover:text-white">
+      {slides[index].button}
+    </span>
+  </Link>
+</motion.div>
+)}
               </motion.div>
             </AnimatePresence>
 

@@ -16,13 +16,13 @@ const reveal: Variants = {
 export default function CTASection() {
   return (
     <section
-      id="contact"
-      className="
-        relative py-28 px-6 overflow-hidden
-        bg-[url('/images/bgabout.jpg')] 
-        bg-cover bg-center
-      "
-    >
+  id="cta"
+  className="
+    relative py-28 px-6 overflow-hidden
+    bg-[url('/images/bgabout.jpg')] 
+    bg-cover bg-center
+  "
+>
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/70" />
 
