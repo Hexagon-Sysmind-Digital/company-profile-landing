@@ -94,14 +94,26 @@ const teamData = [
     {
         image: "/images/DIMAS.jpeg",
         name: "Dimas Putra Perdana",
-        role: "Front end engineer",
+        role: "Frontend Engineer",
         desc: "2+ years of experience in designing intuitive digital experiences and modern web interfaces. Specialized in user-centered design, responsive layouts, and seamless interaction systems.",
     },
     {
         image: "/images/SULTHAN.jpeg",
-        name: "SulthaN Farras Nata Saputra",
-        role: "Back end engineer",
+        name: "Sulthan Farras Nata Saputra",
+        role: "Backend Engineer",
         desc: "2+ years of experience in backend development and system architecture. Specialized in building scalable APIs, database design, and secure server-side applications.",
+    },
+    {
+        image: "/images/HIKARU.jpeg",
+        name: "SMuhammad Hikaru Ibnu Wibowo",
+        role: "Project Manager",
+        desc: "2+ years of experience in project management and digital product coordination. Specialized in agile methodologies, team leadership, and delivering projects on time and within scope.",
+    },
+    {
+        image: "/images/ALPIN.jpeg",
+        name: "Muhamad Alpin Firmansyah",
+        role: "General Manager",
+        desc: "2+ years of experience in business operations and strategic management. Specialized in organizational leadership, performance optimization, and driving sustainable company growth.",
     },
 ];
 

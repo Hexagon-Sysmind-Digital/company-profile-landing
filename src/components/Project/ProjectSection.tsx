@@ -75,6 +75,12 @@ const projects = [
     image: "/images/LOKATARA.jpeg",
     link: "#",
   },
+  {
+    title: "BERKAH PUTRA PUTRI KARAWANG",
+    desc: "A transportation service company specializing in employee shuttle services for businesses. We provide safe, punctual, and efficient daily transport solutions with a well-maintained fleet and professional drivers. Committed to comfort and reliability, we help companies manage employee mobility seamlessly and effectively.",
+    image: "/images/BPPK.jpeg",
+    link: "#",
+  },
 
 ];
 
