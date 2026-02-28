@@ -15,11 +15,11 @@ const reveal: Variants = {
 
 export default function ChoseeMeSection() {
   return (
-    <section
-      id="about"
-      className="relative z-20 py-25 px-6 overflow-hidden
-      bg-[url('/images/bgabout.jpg')] bg-cover bg-center"
-    >
+<section
+  id="about"
+  className="relative z-20 py-16 md:py-25 px-5 md:px-6 overflow-hidden
+  bg-[url('/images/bgabout.jpg')] bg-cover bg-center"
+>
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-white/40" />
@@ -41,11 +41,15 @@ export default function ChoseeMeSection() {
             Why Choose Us
           </p>
 
-          <h2 className="relative inline-block whitespace-nowrap font-extrabold leading-[0.95] 
-               text-[72px] md:text-[96px] lg:text-[70px] text-black">
-
-            <span
-              className="
+          <h2
+  className="
+    relative inline-block font-extrabold leading-[0.95]
+    text-[42px] sm:text-[56px] md:text-[96px] lg:text-[70px]
+    text-black
+  "
+>
+  <span
+    className="
       absolute
       left-[-100vw]
       top-[60%]
@@ -55,19 +59,18 @@ export default function ChoseeMeSection() {
       bg-lime-400
       -z-10
     "
-            />
+  />
 
-            Why Hexamind ?
-          </h2>
+  Why Hexamind?
+</h2>
 
-          <p className="mt-5 text-black/80 text-lg leading-relaxed">
+          <p className="mt-4 md:mt-5 text-black/80 text-base md:text-lg leading-relaxed">
             We build modern digital products designed for performance,
             scalability, and long-term business growth.
           </p>
 
           {/* COMPACT FEATURE LIST */}
-          {/* COMPACT FEATURE LIST */}
-          <div className="mt-8 space-y-3">
+          <div className="mt-6 md:mt-8 space-y-3">
 
             {/* ITEM 1 */}
             <div className="relative group cursor-default">
@@ -154,7 +157,7 @@ export default function ChoseeMeSection() {
           viewport={{ amount: 0.4 }}
           className="relative group"
         >
-          <div className="relative h-[420px] rounded-3xl overflow-hidden">
+          <div className="relative h-[280px] md:h-[420px] rounded-3xl overflow-hidden">
 
             <Image
               src="/images/bgchoseme.png"
@@ -167,12 +170,12 @@ export default function ChoseeMeSection() {
           </div>
 
           {/* Floating Card */}
-          <div className="absolute -bottom-8 -left-8 bg-white shadow-2xl rounded-2xl px-6 py-4 border border-gray-100">
-            <p className="text-sm text-gray-500">Proven By</p>
-            <p className="text-lg font-semibold">
-              Successful Digital Projects
-            </p>
-          </div>
+          <div className="absolute -bottom-6 -left-4 md:-bottom-8 md:-left-8 bg-white shadow-2xl rounded-2xl px-4 md:px-6 py-3 md:py-4 border border-gray-100">
+  <p className="text-xs md:text-sm text-gray-500">Proven By</p>
+  <p className="text-sm md:text-lg font-semibold">
+    Successful Digital Projects
+  </p>
+</div>
         </motion.div>
 
       </div>

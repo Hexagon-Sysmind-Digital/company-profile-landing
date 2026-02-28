@@ -62,7 +62,7 @@ export default function ServiceSection() {
               "
               />
 
-              Our Services
+              Our Service
             </h2>
           </motion.div>
 
