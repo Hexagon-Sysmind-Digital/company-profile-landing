@@ -3,6 +3,7 @@
 import HeroSection from "../../components/About/HeroSection";
 import AboutSection from "../../components/About/AboutSection";
 import VisionMissionSection from "../../components/About/VisionMissionSection";
+import OurProcessSection from "../../components/About/OurProcessSection";
 import CTASection from "../../components/Home/CTASection";
 import FooterSection from "../../components/Home/FooterSection";
 
@@ -13,6 +14,7 @@ export default function About() {
       <HeroSection />
       <AboutSection />
       <VisionMissionSection />
+      <OurProcessSection />
       <CTASection />
       <FooterSection />
 

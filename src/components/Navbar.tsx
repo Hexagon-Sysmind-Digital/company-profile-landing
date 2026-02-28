@@ -49,6 +49,7 @@ export default function Navbar() {
     { name: "About", link: "/about" },
     { name: "Projects", link: "/project" },
     { name: "Pricing", link: "/pricing" },
+    { name: "FAQ", link: "/faq" },
   ].map((item, i) => (
     <Link
       key={i}

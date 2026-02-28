@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[500px] text-white">
+    <section className="relative w-full min-h-[350px] text-white">
 
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -24,7 +24,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-start pt-40">
+      <div className="relative z-10 h-full flex items-start pt-25">
         <div className="max-w-7xl mx-auto w-full px-8">
 
           <motion.div
