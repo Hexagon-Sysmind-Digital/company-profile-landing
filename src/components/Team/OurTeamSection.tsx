@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import { useState } from "react";
 
 /* ================= PREMIUM REVEAL ================= */
 
@@ -117,34 +118,42 @@ function TeamCard({
     role: string;
     desc: string;
 }) {
+
+    const [open, setOpen] = useState(false);
+
     return (
-        <motion.div variants={reveal} className="relative group">
+        <motion.div
+            variants={reveal}
+            className="relative group"
+            onClick={() => setOpen(!open)} // ✅ tap mobile
+        >
 
             {/* shadow offset */}
             <div
-                className="
-                absolute inset-0
-                translate-x-2 translate-y-2
-                bg-black rounded-xl
-                transition-all duration-300
-                group-hover:translate-x-3
-                group-hover:translate-y-3
-            "
-            />
+    className={`
+        absolute inset-0
+        translate-x-2 translate-y-2
+        bg-black rounded-xl
+        transition-all duration-300
+        group-hover:translate-x-3
+        group-hover:translate-y-3
+        ${open ? "translate-x-3 translate-y-3" : ""}
+    `}
+/>
 
             {/* CARD */}
             <div
-                className="
-                relative bg-white
-                border-2 border-black
-                rounded-xl
-                transition-all duration-300
-                group-hover:-translate-y-1
-                group-hover:border-lime-400
-                flex items-center gap-5
-                p-5
-            "
-            >
+    className={`
+        relative bg-white
+        border-2 border-black
+        rounded-xl
+        transition-all duration-300
+        flex items-center gap-5 p-5
+        group-hover:-translate-y-1
+        group-hover:border-lime-400
+        ${open ? "-translate-y-1 border-lime-400" : ""}
+    `}
+>
 
                 {/* IMAGE 1:1 (TETAP SQUARE) */}
                 <div className="relative w-[110px] aspect-square shrink-0 overflow-hidden rounded-lg">
@@ -175,15 +184,15 @@ function TeamCard({
 
                     {/* DESC HOVER */}
                     <div
-                        className="
+    className={`
         overflow-hidden
-        max-h-0
-        opacity-0
         transition-all duration-500 ease-in-out
+        max-h-0 opacity-0
         group-hover:max-h-[200px]
         group-hover:opacity-100
-    "
-                    >
+        ${open ? "max-h-[200px] opacity-100" : ""}
+    `}
+>
                         <p className="text-black/70 text-sm mt-3 leading-relaxed">
                             {desc}
                         </p>
