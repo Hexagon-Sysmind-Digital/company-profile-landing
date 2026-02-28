@@ -75,7 +75,7 @@ const projects = [
     image: "/images/LOKATARA.jpeg",
     link: "#",
   },
-  
+
 ];
 
 export default function ProjectSection() {
@@ -120,7 +120,7 @@ export default function ProjectSection() {
                   -z-10
                 "
               />
-              Our Projects
+              Our Project
             </h2>
           </motion.div>
 

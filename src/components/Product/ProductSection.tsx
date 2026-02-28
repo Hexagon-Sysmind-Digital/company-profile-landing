@@ -40,7 +40,7 @@ const container: Variants = {
     },
 };
 
-export default function PricingSection() {
+export default function ProductSection() {
     const [activeCore, setActiveCore] = useState<number | null>(null);
     const [activeBundle, setActiveBundle] = useState<number | null>(null);
 

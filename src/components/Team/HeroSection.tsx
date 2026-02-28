@@ -35,14 +35,15 @@ export default function HeroSection() {
           >
             {/* TITLE */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-              Our Project
+              Our Team
             </h1>
 
             {/* DESCRIPTION */}
             <p className="mt-6 text-gray-300 text-lg text-justify">
-              Explore a collection of digital products, platforms, and systems
-              we have designed and developed — delivering scalable solutions,
-              modern user experiences, and real business impact across industries.
+              Meet the talented people behind Hexamind — a team of designers, developers, 
+and strategists dedicated to building innovative digital solutions, 
+crafting modern user experiences, and delivering impactful technology 
+that helps businesses grow.
             </p>
           </motion.div>
 
