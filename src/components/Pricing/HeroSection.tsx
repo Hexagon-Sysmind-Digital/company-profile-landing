@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className="relative w-full h-full overflow-hidden rounded-b-[60px] md:rounded-b-[50px]">
           <Image
             src="/images/bghero.jpg"
-            alt="Projects Hero Background"
+            alt="Pricing Hero Background"
             fill
             priority
             className="object-cover"
@@ -35,14 +35,15 @@ export default function HeroSection() {
           >
             {/* TITLE */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-              Our Projects
+              Pricing & Packages
             </h1>
 
             {/* DESCRIPTION */}
             <p className="mt-6 text-gray-300 text-lg text-justify">
-              Explore a collection of digital products, platforms, and systems
-              we have designed and developed — delivering scalable solutions,
-              modern user experiences, and real business impact across industries.
+              Choose the right digital solution tailored to your business goals.
+              From focused core services to integrated bundling packages,
+              we provide scalable systems designed to drive growth,
+              streamline operations, and maximize long-term value.
             </p>
           </motion.div>
 

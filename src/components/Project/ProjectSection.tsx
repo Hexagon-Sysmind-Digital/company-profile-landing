@@ -93,7 +93,7 @@ export default function ProjectSection() {
             initial="hidden"
             whileInView="show"
             viewport={{ amount: 0.4 }}
-            className="text-lg text-black leading-relaxed"
+            className="text-lg text-justify text-black leading-relaxed"
           >
             A collection of digital products and systems I have developed,
             ranging from enterprise platforms to modern web applications
@@ -139,11 +139,11 @@ export default function ProjectSection() {
 
                 {/* TEXT */}
                 <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="font-semibold text-sm">
+                  <h3 className="font-semibold text-sm text-center">
                     {project.title}
                   </h3>
 
-                  <p className="text-xs text-black/70 mt-2">
+                  <p className="text-justify text-xs text-black/70 mt-2">
                     {project.desc}
                   </p>
                 </div>
