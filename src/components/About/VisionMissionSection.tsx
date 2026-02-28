@@ -16,7 +16,7 @@ export default function VisionMissionSection() {
     return (
         <section
             className="
-      relative z-20 py-25 px-6 overflow-hidden
+      relative z-20 py-15 px-6 overflow-hidden
       bg-[url('/images/bgabout.jpg')] bg-cover bg-center
     "
         >
