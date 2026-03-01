@@ -115,6 +115,12 @@ const teamData = [
         role: "General Manager",
         desc: "2+ years of experience in business operations and strategic management. Specialized in organizational leadership, performance optimization, and driving sustainable company growth.",
     },
+    {
+        image: "/images/ANTO.jpeg",
+        name: "Fickry Alfianto Ramadhan",
+        role: "Growth Manager",
+        desc: "2+ years of experience in growth strategy and business development. Specialized in data-driven marketing, performance optimization, and scalable customer acquisition strategies.",
+    },
 ];
 
 /* ================= TEAM CARD ================= */
