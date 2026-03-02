@@ -105,7 +105,7 @@ const teamData = [
     },
     {
         image: "/images/HIKARU.jpeg",
-        name: "SMuhammad Hikaru Ibnu Wibowo",
+        name: "Muhammad Hikaru Ibnu Wibowo",
         role: "Project Manager",
         desc: "2+ years of experience in project management and digital product coordination. Specialized in agile methodologies, team leadership, and delivering projects on time and within scope.",
     },

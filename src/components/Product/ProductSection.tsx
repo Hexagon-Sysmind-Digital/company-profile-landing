@@ -134,70 +134,93 @@ const coreData = [
         title: "Landing Page",
         short: "Strategic SEO-ready digital presence built to convert.",
         details: [
-            "Custom Design",
-            "SEO Optimized Structure",
-            "Analytics Setup",
-            "Conversion Layout",
+            "Custom Design — A unique visual identity tailored specifically to your brand, ensuring credibility and distinction.",
+            "SEO Optimized Structure — Built with search engine best practices to improve visibility and long-term discoverability.",
+            "Analytics Setup — Integrated performance tracking so decisions are guided by real data, not assumptions.",
+            "Copywriting Assistance — Clear, compelling messaging that speaks directly to your audience.",
+            "Conversion Orianted Layout — Strategically arranged content that encourages engagement and action.",
         ],
     },
     {
-        icon: <Database size={26} />,
+        icon: <Database size={26} />, // Logo Database (ERP / System)
         title: "ERP / Web Management",
-        short: "Centralized operational system for structured growth.",
+        short: "Centralized and structured business system for scalable, sustainable growth.",
         details: [
-            "Custom Dashboard",
-            "Workflow Integration",
-            "Secure Infrastructure",
-            "Performance Framework",
+            "Custom Dashboard Design — Interface tailored to your workflow and brand identity",
+            "Workflow & Process Integration — Centralized and connected operational structure",
+            "Secure & Scalable Infrastructure — Built for long-term business expansion",
+            "SEO Optimized Framework — High performance and visibility for public-facing systems",
         ],
     },
     {
-        icon: <ShoppingCart size={26} />,
-        title: "E-Commerce",
-        short: "Scalable online store built for seamless transactions.",
+        icon: <ShoppingCart size={26} />, // Logo E-Commerce
+        title: "E-Commerce Solutions",
+        short: "Professional and scalable online store built for seamless, trustworthy transactions.",
         details: [
-            "Custom Storefront",
-            "SEO Architecture",
-            "Secure Payment",
-            "Inventory Management",
+            "Custom Storefront Design — A distinctive shopping experience aligned with your brand identity",
+            "SEO Optimized Architecture — Structured for strong visibility and organic growth",
+            "Secure Payment Integration — Reliable and protected transaction system",
+            "Inventory & Order Management — Organized backend system for operational clarity",
         ],
     },
 ];
 
 const bundleData = [
     {
-        icon: <Layers size={26} />,
-        title: "Landing + E-Commerce",
-        short: "Acquisition & revenue system in one ecosystem.",
-        details: [
-            "Landing Page",
-            "Online Store",
-            "Analytics Integration",
-            "Conversion Strategy",
-        ],
-    },
+    icon: <Layers size={26} />, // Logo Bundle System
+    title: "Landing Page + E-Commerce",
+    short: "Integrated acquisition and revenue engine within one scalable digital foundation.",
+    details: [
+        "Custom-Designed SEO Landing Page — Built for visibility, clarity, and high-conversion impact",
+        "Conversion-Focused Copywriting — Structured messaging to guide users toward action",
+        "Integrated Analytics System — Data-driven tracking for performance optimization",
+        "Scalable E-Commerce Platform — Seamlessly connected storefront for structured revenue growth",
+    ],
+},
     {
-        icon: <PackageCheck size={26} />,
-        title: "Landing + ERP",
-        short: "Align customer growth with operational control.",
-        details: [
-            "Landing System",
-            "ERP Integration",
-            "Workflow Automation",
-            "Scalable Structure",
-        ],
-    },
+    icon: <PackageCheck size={26} />, // Logo Landing + ERP Bundle
+    title: "Landing Page + ERP / Web Management",
+    short: "Strategic integration between customer acquisition and operational efficiency.",
+    details: [
+        "SEO-Optimized Landing Page — High-performing acquisition system built for visibility and conversion",
+        "Centralized ERP / Web Management — Structured backend for operational clarity and control",
+        "Workflow Automation — Seamless connection between front-end engagement and internal processes",
+        "Scalable Business Architecture — Aligned digital foundation designed for sustainable expansion",
+    ],
+},
     {
-        icon: <FileText size={26} />,
-        title: "Landing + CMS",
-        short: "Flexible content control with strong brand presence.",
-        details: [
-            "Landing Page",
-            "Content Management",
-            "SEO Optimization",
-            "Editable Structure",
-        ],
-    },
+    icon: <FileText size={26} />, // Logo Landing + CMS
+    title: "Landing Page + CMS",
+    short: "Strategic brand presence with flexible and independent content control.",
+    details: [
+        "Custom-Designed SEO Landing Page — Built for visibility, credibility, and conversion impact",
+        "Flexible Content Management System — Easily manage and update content independently",
+        "Structured SEO Framework — Maintain sustained search visibility and performance",
+        "Scalable & Editable Architecture — Adaptive digital foundation for long-term growth",
+    ],
+},
+{
+    icon: <Layers size={26} />, // Logo Ecosystem / Integrated System
+    title: "Landing Page + E-Commerce + ERP",
+    short: "Complete digital ecosystem connecting acquisition, sales, and operational control.",
+    details: [
+        "Strategic SEO Landing Page — Built to drive visibility, credibility, and high-conversion acquisition",
+        "Scalable E-Commerce Platform — Structured online sales system optimized for performance and growth",
+        "Integrated ERP System — Centralized operational management for inventory, finance, and workflow control",
+        "Unified Digital Infrastructure — Seamlessly connected framework designed for long-term scalability and performance",
+    ],
+},
+{
+    icon: <Database size={26} />, // Logo System Integration
+    title: "ERP + E-Commerce Integration",
+    short: "Aligned revenue generation and operational management within one scalable system.",
+    details: [
+        "Scalable Online Sales Platform — Reliable and structured transaction system",
+        "Centralized ERP Management — Integrated inventory, finance, and workflow control",
+        "Real-Time Data Synchronization — Connected transactions and operational tracking",
+        "Structured Business Architecture — Built for efficiency, clarity, and long-term scalability",
+    ],
+},
 ];
 
 /* ================= CARD ================= */
