@@ -71,11 +71,10 @@ export default function Navbar() {
 
                 <span
                   className={`relative z-10 transition-colors duration-300
-                  ${
-                    scrolled
+                  ${scrolled
                       ? "group-hover:text-white"
                       : "group-hover:text-black"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </span>
@@ -102,9 +101,18 @@ export default function Navbar() {
             onClick={() => setMenuOpen(true)}
             className="ml-auto md:hidden flex flex-col gap-1.5 z-[60]"
           >
-            <span className="w-6 h-[2px] bg-white" />
-            <span className="w-6 h-[2px] bg-white" />
-            <span className="w-6 h-[2px] bg-white" />
+            <span
+              className={`w-6 h-[2px] transition-colors duration-300 ${scrolled ? "bg-black" : "bg-white"
+                }`}
+            />
+            <span
+              className={`w-6 h-[2px] transition-colors duration-300 ${scrolled ? "bg-black" : "bg-white"
+                }`}
+            />
+            <span
+              className={`w-6 h-[2px] transition-colors duration-300 ${scrolled ? "bg-black" : "bg-white"
+                }`}
+            />
           </button>
 
         </div>
