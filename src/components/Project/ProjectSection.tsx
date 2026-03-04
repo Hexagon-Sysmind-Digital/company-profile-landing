@@ -22,6 +22,12 @@ const projects = [
     link: "https://alpha-strength-landing.vercel.app/",
   },
   {
+    title: "HEXASHOP E-COMMERCE",
+    desc: "A modern and responsive fashion e-commerce website built with a clean UI and seamless shopping experience. Designed to showcase products in an elegant layout, featuring category browsing, product highlights, and user-friendly navigation optimized for performance and scalability.",
+    image: "/images/HEXASHOP.png",
+    link: "https://e-commerce-hexashop-two.vercel.app/",
+  },
+  {
     title: "MERCURE KARAWANG",
     desc: "A hotel designed for travelers seeking local and authentic experiences, offering comfortable accommodations combined with cultural immersion, personalized services, and opportunities to explore the destination through its traditions, cuisine, and unique community atmosphere..",
     image: "/images/HOTEL.png",
