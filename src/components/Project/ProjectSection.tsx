@@ -28,6 +28,12 @@ const projects = [
     link: "https://e-commerce-hexashop-two.vercel.app/",
   },
   {
+    title: "BLOSSOM BLOOM",
+    desc: "A modern and elegant floral-themed landing page designed to showcase beauty, freshness, and premium flower collections. Built with a clean layout, smooth animations, and responsive design to create an engaging user experience while highlighting products, services, and brand identity effectively.",
+    image: "/images/BLOSSOM.png",
+    link: "https://blossom-bloom-landing.vercel.app/",
+  },
+  {
     title: "MERCURE KARAWANG",
     desc: "A hotel designed for travelers seeking local and authentic experiences, offering comfortable accommodations combined with cultural immersion, personalized services, and opportunities to explore the destination through its traditions, cuisine, and unique community atmosphere..",
     image: "/images/HOTEL.png",
