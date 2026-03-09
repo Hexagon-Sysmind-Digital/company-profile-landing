@@ -8,12 +8,12 @@ const faqs = [
   {
     question: "What services does Hexamind provide?",
     answer:
-      "We provide web development, mobile applications, UI/UX design, database architecture, cloud deployment, and ongoing maintenance services."
+      "We provide professional digital solutions including website development, web systems, CMS platforms, ERP integration, and digital infrastructure designed to help businesses establish a strong online presence and improve operational efficiency."
   },
   {
     question: "How long does a typical project take?",
     answer:
-      "Project duration depends on scope and complexity, but most projects take between 6 to 16 weeks from discovery to launch."
+      "Project timelines vary depending on the scope and complexity. A landing page may take 1–2 weeks, a business website around 3–4 weeks, while custom systems or ERP implementations may require several months."
   },
   {
     question: "Do you offer post-launch support?",
@@ -34,7 +34,32 @@ const faqs = [
     question: "Do you provide design prototypes before development?",
     answer:
       "Yes, we create detailed UI/UX prototypes to validate user experience and design flow before starting the development phase."
-  }
+  },
+  {
+    question: "What are the payment terms?",
+    answer:
+      "Our standard payment structure typically requires a 20% initial deposit to begin the project and the remaining 80% upon completion before final delivery, ensuring commitment and clarity for both parties throughout the project lifecycle."
+  },
+  {
+    question: "Do you provide hosting or server setup?",
+    answer:
+      "Yes. We can assist with hosting deployment, server configuration, and VPS infrastructure to ensure reliable performance, security, and scalability depending on the client’s requirements."
+  },
+  {
+    question: "Do you provide maintenance after the project is launched?",
+    answer:
+      "Yes. We offer optional maintenance and support services that include updates, system monitoring, bug fixing, and technical assistance to ensure long-term system reliability."
+  },
+  {
+    question: "How do we communicate during the project?",
+    answer:
+      "Communication is maintained through regular progress updates, scheduled discussions, and digital communication channels to ensure transparency and alignment throughout the project lifecycle."
+  },
+  {
+    question: "Who owns the system after the project is completed?",
+    answer:
+      "Upon final payment, the client receives ownership of the delivered product according to the agreed terms, including access to the deployed system and relevant project assets."
+  },
 ];
 
 export default function FAQSection() {
