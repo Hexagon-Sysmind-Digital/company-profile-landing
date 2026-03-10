@@ -45,7 +45,7 @@ export default function CTASection() {
 
         {/* Small Contact Card */}
 <motion.a
-  href="mailto:hexagonsysmindigital@gmail.com"
+  href="mailto:hexagonsysminsdigital@gmail.com"
   variants={reveal}
   whileHover={{ y: -6 }}
   whileTap={{ scale: 0.97 }}
@@ -93,7 +93,7 @@ export default function CTASection() {
           text-sm md:text-base
           group-hover:underline
         ">
-          hexagonsysmindigital@gmail.com
+          hexagonsysminsdigital@gmail.com
         </p>
       </div>
 
